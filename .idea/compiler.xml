@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="billionbyte-service-api-member" />
+        <module name="billionbyte-service-member" />
+        <module name="billionbyte-common" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="billionbyte-common" options="-parameters" />
+      <module name="billionbyte-service-api-member" options="-parameters" />
+      <module name="billionbyte-service-member" options="-parameters" />
+    </option>
+  </component>
+</project>

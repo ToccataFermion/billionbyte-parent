@@ -1,0 +1,3 @@
+com\billionbyte\member\AppMember.class
+com\billionbyte\member\mapper\UserMapper.class
+com\billionbyte\member\service\impl\MemberServiceImpl.class

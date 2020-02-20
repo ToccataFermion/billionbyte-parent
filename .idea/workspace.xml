@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c31c4aff-dc4f-4945-af5e-713f087db0c9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/54189.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-common/src/main/java/com/billionbyte/base/BaseApiService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-common/src/main/java/com/billionbyte/base/BaseResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-common/src/main/java/com/billionbyte/constants/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-common/src/main/java/com/billionbyte/pojo/UserDo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-common/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-common/target/billionbyte-common-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-common/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-common/target/classes/com/billionbyte/base/BaseApiService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-common/target/classes/com/billionbyte/base/BaseResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-common/target/classes/com/billionbyte/constants/Constants.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-common/target/classes/com/billionbyte/pojo/UserDo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-common/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-api/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-api/billionbyte-service-api-member/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-api/billionbyte-service-api-member/src/main/java/com/billionbyte/member/service/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-api/billionbyte-service-api-member/target/billionbyte-service-api-member-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-api/billionbyte-service-api-member/target/classes/com/billionbyte/member/service/MemberService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-api/billionbyte-service-api-member/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-api/billionbyte-service-api-member/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-api/billionbyte-service-api-member/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-api/billionbyte-service-api-member/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-impl/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/src/main/java/com/billionbyte/member/AppMember.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/src/main/java/com/billionbyte/member/aop/AopLogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/src/main/java/com/billionbyte/member/client/ElasticsearchRestClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/src/main/java/com/billionbyte/member/contronller/MemberContonller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/src/main/java/com/billionbyte/member/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/src/main/java/com/billionbyte/member/service/impl/MemberServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/target/billionbyte-service-member-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/target/classes/com/billionbyte/member/AppMember.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/target/classes/com/billionbyte/member/aop/AopLogAspect$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/target/classes/com/billionbyte/member/aop/AopLogAspect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/target/classes/com/billionbyte/member/client/ElasticsearchRestClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/target/classes/com/billionbyte/member/contronller/MemberContonller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/target/classes/com/billionbyte/member/mapper/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/target/classes/com/billionbyte/member/service/impl/MemberServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billionbyte-service-impl/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-basics/meite-shop-basics-springcloud-eureka/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-basics/meite-shop-basics-springcloud-eureka/src/main/java/com/mayikt/app/AppEureka.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-basics/meite-shop-basics-springcloud-eureka/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-basics/meite-shop-basics-springcloud-eureka/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-basics/meite-shop-basics-springcloud-eureka/target/classes/META-INF/maven/com.mayikt/meite-shop-basics-springcloud-eureka/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-basics/meite-shop-basics-springcloud-eureka/target/classes/META-INF/maven/com.mayikt/meite-shop-basics-springcloud-eureka/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-basics/meite-shop-basics-springcloud-eureka/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-basics/meite-shop-basics-springcloud-eureka/target/classes/com/mayikt/app/AppEureka.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-basics/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-common/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-common/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-common/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-portal/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-portal/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/billionbyte-service-api/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-portal/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-api/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-api/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/billionbyte-service-api/billionbyte-service-api-member/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-api/meite-shop-service-api-member/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-api/meite-shop-service-api-member/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-api/meite-shop-service-api-member/.settings/org.eclipse.core.resources.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/billionbyte-service-api/billionbyte-service-api-member/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-api/meite-shop-service-api-member/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-api/meite-shop-service-api-member/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/billionbyte-service-impl/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-api/meite-shop-service-api-member/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-api/meite-shop-service-api-member/src/main/java/com/mayikt/member/MemberService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-api/meite-shop-service-api-member/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-api/meite-shop-service-api-member/target/classes/META-INF/maven/com.mayikt/meite-shop-service-api-member/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-api/meite-shop-service-api-member/target/classes/META-INF/maven/com.mayikt/meite-shop-service-api-member/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-api/meite-shop-service-api-member/target/classes/com/mayikt/member/MemberService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-api/meite-shop-service-api-weixin/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-api/meite-shop-service-api-weixin/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-api/meite-shop-service-api-weixin/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-api/meite-shop-service-api-weixin/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-api/meite-shop-service-api-weixin/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-api/meite-shop-service-api-weixin/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-api/meite-shop-service-api-weixin/src/main/java/com/mayikt/weixin/entity/AppEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-api/meite-shop-service-api-weixin/src/main/java/com/mayikt/weixin/service/WeiXinAppService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-api/meite-shop-service-api-weixin/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-api/meite-shop-service-api-weixin/target/classes/META-INF/maven/com.mayikt/meite-shop-service-api-weixin/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-api/meite-shop-service-api-weixin/target/classes/META-INF/maven/com.mayikt/meite-shop-service-api-weixin/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-api/meite-shop-service-api-weixin/target/classes/com/mayikt/weixin/entity/AppEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-api/meite-shop-service-api-weixin/target/classes/com/mayikt/weixin/service/WeiXinAppService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-api/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-member/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-member/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-member/.settings/org.eclipse.core.resources.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-member/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/billionbyte-service-api/billionbyte-service-api-member/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-member/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-member/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-member/src/main/java/com/mayikt/member/AppMember.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-member/src/main/java/com/mayikt/member/feign/WeiXinAppServiceFeign.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-member/src/main/java/com/mayikt/member/service/impl/MemberServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-member/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-member/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-member/target/classes/META-INF/maven/com.mayikt/meite-shop-service-member/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-member/target/classes/META-INF/maven/com.mayikt/meite-shop-service-member/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-member/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-member/target/classes/com/mayikt/member/AppMember.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-member/target/classes/com/mayikt/member/feign/WeiXinAppServiceFeign.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-member/target/classes/com/mayikt/member/service/impl/MemberServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-weixin/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-weixin/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-weixin/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-weixin/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-weixin/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-weixin/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-weixin/src/main/java/com/mayikt/AppWeixin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-weixin/src/main/java/com/mayikt/weixin/service/impl/WeiXinAppServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-weixin/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-weixin/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-weixin/target/classes/META-INF/maven/com.mayikt/meite-shop-service-weixin/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-weixin/target/classes/META-INF/maven/com.mayikt/meite-shop-service-weixin/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-weixin/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-weixin/target/classes/com/mayikt/AppWeixin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/meite-shop-service-weixin/target/classes/com/mayikt/weixin/service/impl/WeiXinAppServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meite-shop-service-impl/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/billionbyte-service-api/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/billionbyte-common/target/" />
+    <ignored path="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/target/" />
+    <ignored path="$PROJECT_DIR$/billionbyte-service-api/billionbyte-service-api-member/target/" />
+    <ignored path="$PROJECT_DIR$/billionbyte-service-impl/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/src/main/java/com/billionbyte/member/service/impl/MemberServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="388" lean-forward="true" selection-start-line="388" selection-end-line="388" />
+              <folding>
+                <element signature="method#insertMember#0;class#MemberServiceImpl#0" />
+                <element signature="method#updateMember#0;class#MemberServiceImpl#0" />
+                <element signature="method#searchByNameMember#0;class#MemberServiceImpl#0" />
+                <element signature="method#countGroupByuserIdandSex#0;class#MemberServiceImpl#0" />
+                <element signature="method#avgUserIdGroupBySex#0;class#MemberServiceImpl#0" />
+                <element signature="e#17958#18018#0" />
+                <element signature="method#insertMemeberToES#0;class#MemberServiceImpl#0" />
+                <element signature="docComment;method#getAggregationResult#0;class#MemberServiceImpl#0" />
+                <element signature="method#getAggregationResult#0;class#MemberServiceImpl#0" />
+                <element signature="method#getAggregationResult#1;class#MemberServiceImpl#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/billionbyte-service-api/billionbyte-service-api-member/src/main/java/com/billionbyte/member/service/MemberService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/src/main/java/com/billionbyte/member/contronller/MemberContonller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="81" column="25" lean-forward="true" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="25" />
+              <folding>
+                <element signature="method#deleteMember#0;class#MemberContonller#0" />
+                <element signature="method#searchByNameMember#0;class#MemberContonller#0" />
+                <element signature="method#countGroupByuserIdandSex#0;class#MemberContonller#0" />
+                <element signature="method#avgUserIdGroupBySex#0;class#MemberContonller#0" />
+                <element signature="method#insertMemeberToES#0;class#MemberContonller#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/src/main/java/com/billionbyte/member/AppMember.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/billionbyte-service-api/billionbyte-service-api-member/src/main/java/com/billionbyte/member/service/MemberService.java" />
+        <option value="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/src/main/java/com/billionbyte/member/contronller/MemberContonller.java" />
+        <option value="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/src/main/java/com/billionbyte/member/service/impl/MemberServiceImpl.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-14" />
+    <option name="width" value="1386" />
+    <option name="height" value="745" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="billionbyte-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="billionbyte-parent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="billionbyte-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="billionbyte-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="billionbyte-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="billionbyte-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-api" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-api-member" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="billionbyte-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="billionbyte-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-api" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-api-member" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="billionbyte-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="billionbyte-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-api" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-api-member" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="billionbyte-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="billionbyte-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-api" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-api-member" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="billionbyte-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="billionbyte-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-api" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-api-member" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="billionbyte-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="billionbyte-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-api" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-api-member" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="billionbyte-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="billionbyte-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-api" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-api-member" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte" type="462c0819:PsiDirectoryNode" />
+              <item name="member" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="billionbyte-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="billionbyte-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-api" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-api-member" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte" type="462c0819:PsiDirectoryNode" />
+              <item name="member" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="billionbyte-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="billionbyte-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="billionbyte-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="billionbyte-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-member" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="billionbyte-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="billionbyte-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-member" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="billionbyte-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="billionbyte-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-member" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="billionbyte-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="billionbyte-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-member" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="billionbyte-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="billionbyte-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-member" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="billionbyte-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="billionbyte-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-member" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="billionbyte-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="billionbyte-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-member" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte" type="462c0819:PsiDirectoryNode" />
+              <item name="member" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="billionbyte-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="billionbyte-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-member" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte" type="462c0819:PsiDirectoryNode" />
+              <item name="member" type="462c0819:PsiDirectoryNode" />
+              <item name="contronller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="billionbyte-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="billionbyte-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-member" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte" type="462c0819:PsiDirectoryNode" />
+              <item name="member" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="billionbyte-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="billionbyte-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte-service-member" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="billionbyte" type="462c0819:PsiDirectoryNode" />
+              <item name="member" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="AppMember" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="billionbyte-service-member" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.billionbyte.member.AppMember" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c31c4aff-dc4f-4945-af5e-713f087db0c9" name="Default Changelist" comment="" />
+      <created>1582016710611</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582016710611</updated>
+      <workItem from="1582016717094" duration="17864000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="17864000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-14" y="0" width="1386" height="745" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23152338" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.049099836" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.20294599" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
+      <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32943144" />
+      <window_info anchor="bottom" id="Spring" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.46972176" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" />
+      <window_info anchor="bottom" id="Database Changes" order="15" />
+      <window_info anchor="bottom" id="Version Control" order="16" />
+      <window_info anchor="bottom" id="Tail" order="17" />
+      <window_info anchor="right" id="Bean Validation" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.039334342" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.32943293" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/src/main/java/com/billionbyte/member/service/impl/MemberServiceImpl.java</url>
+          <line>466</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.3.2/elasticsearch-6.3.2.jar!/org/elasticsearch/common/Strings.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.3.2/elasticsearch-6.3.2.jar!/org/elasticsearch/action/search/SearchResponse.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="348" column="19" selection-start-line="348" selection-start-column="19" selection-end-line="348" selection-end-column="19" />
+          <folding>
+            <element signature="e#14972#14973#0" expanded="true" />
+            <element signature="e#15017#15018#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/billionbyte-service-api/billionbyte-service-api-member/src/main/java/com/billionbyte/member/service/MemberService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/src/main/java/com/billionbyte/member/service/impl/MemberServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="388" lean-forward="true" selection-start-line="388" selection-end-line="388" />
+          <folding>
+            <element signature="method#insertMember#0;class#MemberServiceImpl#0" />
+            <element signature="method#updateMember#0;class#MemberServiceImpl#0" />
+            <element signature="method#searchByNameMember#0;class#MemberServiceImpl#0" />
+            <element signature="method#countGroupByuserIdandSex#0;class#MemberServiceImpl#0" />
+            <element signature="method#avgUserIdGroupBySex#0;class#MemberServiceImpl#0" />
+            <element signature="e#17958#18018#0" />
+            <element signature="method#insertMemeberToES#0;class#MemberServiceImpl#0" />
+            <element signature="docComment;method#getAggregationResult#0;class#MemberServiceImpl#0" />
+            <element signature="method#getAggregationResult#0;class#MemberServiceImpl#0" />
+            <element signature="method#getAggregationResult#1;class#MemberServiceImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/src/main/java/com/billionbyte/member/AppMember.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/src/main/java/com/billionbyte/member/contronller/MemberContonller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="81" column="25" lean-forward="true" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="25" />
+          <folding>
+            <element signature="method#deleteMember#0;class#MemberContonller#0" />
+            <element signature="method#searchByNameMember#0;class#MemberContonller#0" />
+            <element signature="method#countGroupByuserIdandSex#0;class#MemberContonller#0" />
+            <element signature="method#avgUserIdGroupBySex#0;class#MemberContonller#0" />
+            <element signature="method#insertMemeberToES#0;class#MemberContonller#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.19738562" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

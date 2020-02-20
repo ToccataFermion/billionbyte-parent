@@ -1,0 +1,25 @@
+###服务启动端口号
+server:
+  port: 8080
+###服务名称
+spring:
+    application:
+        name: app-billionbyte-member
+  ###数据库相关连接
+    datasource:
+      username: root
+      password: admin
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/billionbyte_member?useUnicode=true&characterEncoding=UTF-8
+
+swagger:
+  base-package: com.billionbyte.member.contronller
+  title: 会员服务接口
+  description: 会员增删查改
+  version: 1.0
+  contact:
+    name: zhaoxi
+    email: 541897774@qq.com
+
+elasticsearch:
+  ip: localhost:9200

@@ -33,7 +33,7 @@ public class UserDo {
      * 性别 1 男 0女
      */
     @ApiModelProperty("用户性别 1男 0女")
-    private char sex;
+    private String sex;
     /**
      * 手机号码
      */

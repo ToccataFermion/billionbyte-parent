@@ -300,11 +300,11 @@ public class MemberServiceImpl implements MemberService {
                 //处理返回结果
                 SearchHit[] hits = response.getHits().getHits();
                 for (SearchHit hit : hits) {
-                    System.out.println(hit);
+
                     //转为json格式
                     JSONObject json=JSONObject.parseObject(hit.getSourceAsString());
                     //再由json转为实体类
-                    System.out.println(json.toJSONString());
+
                     list.add ((UserDo)JSONObject.toJavaObject(json,UserDo.class));
                 }
                 //总结果数
@@ -436,11 +436,9 @@ public class MemberServiceImpl implements MemberService {
         //处理结果返回为list<user>
         List<UserDo> list=new ArrayList<>();
         for (SearchHit hit : response.getHits().getHits()) {
-            System.out.println(hit);
             //转为json格式
             JSONObject json=JSONObject.parseObject(hit.getSourceAsString());
             //再由json转为实体类
-            System.out.println(json.toJSONString());
             list.add ((UserDo)JSONObject.toJavaObject(json,UserDo.class));
         }
 

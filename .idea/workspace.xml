@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33f0e1d5-6fbb-4cca-82a7-1d3de7410d4b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billionbyte-common/target/billionbyte-common-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/billionbyte-common/target/billionbyte-common-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billionbyte-common/target/classes/com/billionbyte/base/BaseApiService.class" beforeDir="false" afterPath="$PROJECT_DIR$/billionbyte-common/target/classes/com/billionbyte/base/BaseApiService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billionbyte-common/target/classes/com/billionbyte/base/BaseResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/billionbyte-common/target/classes/com/billionbyte/base/BaseResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billionbyte-common/target/classes/com/billionbyte/pojo/UserDo.class" beforeDir="false" afterPath="$PROJECT_DIR$/billionbyte-common/target/classes/com/billionbyte/pojo/UserDo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billionbyte-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/billionbyte-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billionbyte-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billionbyte-service-api/billionbyte-service-api-member/src/main/java/com/billionbyte/member/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/billionbyte-service-api/billionbyte-service-api-member/src/main/java/com/billionbyte/member/service/MemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billionbyte-service-api/billionbyte-service-api-member/target/billionbyte-service-api-member-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/billionbyte-service-api/billionbyte-service-api-member/target/billionbyte-service-api-member-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billionbyte-service-api/billionbyte-service-api-member/target/classes/com/billionbyte/member/service/MemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/billionbyte-service-api/billionbyte-service-api-member/target/classes/com/billionbyte/member/service/MemberService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billionbyte-service-api/billionbyte-service-api-member/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/billionbyte-service-api/billionbyte-service-api-member/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billionbyte-service-api/billionbyte-service-api-member/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/src/main/java/com/billionbyte/member/contronller/MemberContonller.java" beforeDir="false" afterPath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/src/main/java/com/billionbyte/member/contronller/MemberContonller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/src/main/java/com/billionbyte/member/service/impl/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/src/main/java/com/billionbyte/member/service/impl/MemberServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/target/billionbyte-service-member-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/target/classes/com/billionbyte/member/AppMember.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/target/classes/com/billionbyte/member/aop/AopLogAspect$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/target/classes/com/billionbyte/member/aop/AopLogAspect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/target/classes/com/billionbyte/member/client/ElasticsearchRestClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/target/classes/com/billionbyte/member/contronller/MemberContonller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/target/classes/com/billionbyte/member/mapper/UserMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/target/classes/com/billionbyte/member/service/impl/MemberServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-    </list>
+    <list default="true" id="33f0e1d5-6fbb-4cca-82a7-1d3de7410d4b" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/billionbyte-service-impl/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,12 +17,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/src/main/java/com/billionbyte/member/contronller/MemberContonller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="277" selection-start-line="277" selection-end-line="277" />
+            <state relative-caret-position="327">
+              <caret line="26" column="39" lean-forward="true" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#updateMember#0;class#MemberContonller#0" />
                 <element signature="e#3909#3964#0" />
                 <element signature="e#4819#4845#0" />
@@ -61,7 +35,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/src/main/java/com/billionbyte/member/service/impl/MemberServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="112">
@@ -95,9 +69,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/pom.xml" />
-        <option value="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/src/main/java/com/billionbyte/member/contronller/MemberContonller.java" />
         <option value="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/src/main/java/com/billionbyte/member/service/impl/MemberServiceImpl.java" />
         <option value="$PROJECT_DIR$/billionbyte-service-api/billionbyte-service-api-member/src/main/java/com/billionbyte/member/service/MemberService.java" />
+        <option value="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/src/main/java/com/billionbyte/member/contronller/MemberContonller.java" />
       </list>
     </option>
   </component>
@@ -674,12 +648,20 @@
       <updated>1582263747050</updated>
       <workItem from="1582263749247" duration="2131000" />
       <workItem from="1582266299576" duration="8505000" />
-      <workItem from="1582277040478" duration="3847000" />
+      <workItem from="1582277040478" duration="4710000" />
     </task>
+    <task id="LOCAL-00001" summary="提供布尔搜索功能">
+      <created>1582281323893</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582281323893</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14483000" />
+    <option name="totallyTimeSpent" value="15346000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -691,9 +673,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-14" y="0" width="1386" height="745" extended-state="0" />
+    <frame x="-14" y="0" width="1386" height="745" extended-state="1" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21116139" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21116139" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -703,7 +685,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924585" visible="true" weight="0.5433715" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924585" visible="true" weight="0.42062193" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.507365" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -728,11 +710,15 @@
       <window_info anchor="right" id="Database" order="6" weight="0.32943293" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Maven" order="9" visible="true" weight="0.28959277" />
+      <window_info anchor="right" id="Maven" order="9" visible="true" weight="0.08748115" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="提供布尔搜索功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="提供布尔搜索功能" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -877,21 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/src/main/java/com/billionbyte/member/contronller/MemberContonller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="277" selection-start-line="277" selection-end-line="277" />
-          <folding>
-            <element signature="method#updateMember#0;class#MemberContonller#0" />
-            <element signature="e#3909#3964#0" />
-            <element signature="e#4819#4845#0" />
-            <element signature="method#deleteMember#0;class#MemberContonller#0" />
-            <element signature="method#avgUserIdGroupBySex#0;class#MemberContonller#0" />
-            <element signature="method#updateMemeberToES#0;class#MemberContonller#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/src/main/java/com/billionbyte/member/service/impl/MemberServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -902,6 +873,22 @@
             <element signature="method#getAggregationMap#0;class#MemberServiceImpl#0" />
             <element signature="e#22954#24835#0" />
             <element signature="method#toMap#0;class#MemberServiceImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/src/main/java/com/billionbyte/member/contronller/MemberContonller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="26" column="39" lean-forward="true" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#updateMember#0;class#MemberContonller#0" />
+            <element signature="e#3909#3964#0" />
+            <element signature="e#4819#4845#0" />
+            <element signature="method#deleteMember#0;class#MemberContonller#0" />
+            <element signature="method#avgUserIdGroupBySex#0;class#MemberContonller#0" />
+            <element signature="method#updateMemeberToES#0;class#MemberContonller#0" />
           </folding>
         </state>
       </provider>

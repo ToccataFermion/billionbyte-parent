@@ -34,4 +34,7 @@ public interface MemberService {
 	String countGroupByuserIdandSex() throws IOException;
 	String avgUserIdGroupBySex() throws IOException;
 	String insertMemeberToES(UserDo userDo) throws IOException;
+	String updateMemberToES(UserDo userDo) throws IOException;
+	List<UserDo> boolSearchByAnyField(UserDo userDo) throws IOException;
+//	int deleteAllMemberToES() throws  IOException;
 }

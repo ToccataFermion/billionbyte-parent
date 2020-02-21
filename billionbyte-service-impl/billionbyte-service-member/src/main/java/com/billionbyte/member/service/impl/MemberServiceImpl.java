@@ -1,15 +1,19 @@
 package com.billionbyte.member.service.impl;
 
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.billionbyte.base.BaseResponse;
 import com.billionbyte.constants.Constants;
 import com.billionbyte.member.mapper.UserMapper;
 import org.apache.commons.lang3.StringEscapeUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.elasticsearch.action.Action;
+import org.elasticsearch.action.delete.DeleteResponse;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.action.search.SearchType;
+import org.elasticsearch.action.update.UpdateResponse;
 import org.elasticsearch.cluster.metadata.MetaDataIndexTemplateService;
 import org.elasticsearch.index.query.QueryBuilders.*;
 import com.billionbyte.pojo.UserDo;
@@ -34,6 +38,10 @@ import org.elasticsearch.index.query.functionscore.FieldValueFactorFunctionBuild
 import org.elasticsearch.index.query.functionscore.FunctionScoreQueryBuilder;
 import org.elasticsearch.index.query.functionscore.RandomScoreFunctionBuilder;
 import org.elasticsearch.index.query.functionscore.ScoreFunctionBuilders;
+import org.elasticsearch.index.reindex.BulkByScrollResponse;
+import org.elasticsearch.index.reindex.DeleteByQueryAction;
+import org.elasticsearch.index.reindex.DeleteByQueryRequest;
+import org.elasticsearch.index.reindex.ScrollableHitSource;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.aggregations.*;
 import org.elasticsearch.search.aggregations.bucket.MultiBucketsAggregation;
@@ -64,6 +72,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.billionbyte.base.BaseApiService;
 import com.billionbyte.base.BaseResponse;
 import com.billionbyte.member.service.MemberService;
+import springfox.documentation.spring.web.json.Json;
 
 import javax.xml.ws.soap.MTOM;
 import java.io.IOException;
@@ -224,9 +233,9 @@ public class MemberServiceImpl implements MemberService {
 //                .maxExpansions(50));
 
 
-//  查询聚合：查询的结果中使用聚合
-  //全局桶：不受查询结果的限制
-////查询
+/** 查询聚合：查询的结果中使用聚合
+   *全局桶：不受查询结果的限制
+ */
 //        searchSourceBuilder.query(QueryBuilders.matchQuery("make","ford"));
 ////对查询结果求平均
 //        AggregationBuilder singleAvgPrice = AggregationBuilders.avg("singleAvgPrice").field("price");
@@ -239,19 +248,19 @@ public class MemberServiceImpl implements MemberService {
 //        searchSourceBuilder.aggregation(all);
 //        searchRequest.source(searchSourceBuilder);
 
-///**
-// * 过滤聚合：过滤后对结果进行聚合
-// */
+/**
+ * 过滤聚合：过滤后对结果进行聚合
+ */
 ////过滤
 //        searchSourceBuilder.query(QueryBuilders.constantScoreQuery(QueryBuilders.rangeQuery("price").gte("10000")));
 ////对过滤结果求平均
 //        AggregationBuilder singleAvgPrice = AggregationBuilders.avg("singleAvgPrice").field("price");
 
-///**
-// * 查询
-// * 过滤桶：文档满足过滤桶的条件时，将其加入到桶内
-// * 使用过滤桶在查询范围基础上应用过滤器
-// */
+/**
+ * 查询
+ * 过滤桶：文档满足过滤桶的条件时，将其加入到桶内
+ * 使用过滤桶在查询范围基础上应用过滤器
+ */
 ////查询
 //        searchSourceBuilder.query(QueryBuilders.matchQuery("make","ford"));
 ////创建过滤桶
@@ -386,24 +395,67 @@ public class MemberServiceImpl implements MemberService {
 //        JSONObject.toJSONString(getAggregationMap(response,response.getClass()));
         return response.toString();
     }
-
     @Override
     public String insertMemeberToES(UserDo userDo) throws IOException {
         IndexRequest indexRequest=new IndexRequest();
         indexRequest.index("billionbyte").type("member").id(userDo.getUserId()+"");
-        Map<String, Object> source = new HashMap<String, Object>();
-        source.put("userId",userDo.getUserId());
-        source.put("userName",userDo.getUserName());
-        source.put("email",userDo.getEmail());
-        source.put("mobile",userDo.getMobile());
-        source.put("password",userDo.getPassword());
-        source.put("sex",String.valueOf(userDo.getSex()));
 
-        indexRequest.source(source);
+
+        indexRequest.source(toMap(userDo));
         IndexResponse indexResponse=highLevelClient.index(indexRequest);
         System.out.println(indexResponse);
             return     indexResponse.toString();
     }
+
+    @Override
+    public String updateMemberToES(UserDo userDo) throws IOException {
+       //       通过id更新文档
+        UpdateRequest updateRequest=new UpdateRequest();
+
+        updateRequest.index("billionbyte").type("member").id(userDo.getUserId()+"").doc(toMap(userDo));
+        UpdateResponse response=highLevelClient.update(updateRequest);
+
+        return response.toString();
+    }
+
+    @Override
+    public List<UserDo> boolSearchByAnyField(UserDo userDo) throws IOException {
+        SearchRequest request=new SearchRequest();
+        request.indices("billionbyte").types("member");
+        BoolQueryBuilder boolQuery = QueryBuilders.boolQuery();
+        Map<String,Object> map=toMap(userDo);
+        for(Map.Entry<String,Object> entry : map.entrySet()){
+            if(entry.getValue()!=null && !entry.getValue().equals("") && !entry.getValue().equals("\u0000") ){
+                boolQuery.must(QueryBuilders.matchQuery(entry.getKey(),entry.getValue()));
+            }
+        }
+        SearchSourceBuilder sourceBuilder=new SearchSourceBuilder();
+        sourceBuilder.query(boolQuery).size(99);
+        request.source(sourceBuilder);
+        SearchResponse response=highLevelClient.search(request);
+        //处理结果返回为list<user>
+        List<UserDo> list=new ArrayList<>();
+        for (SearchHit hit : response.getHits().getHits()) {
+            System.out.println(hit);
+            //转为json格式
+            JSONObject json=JSONObject.parseObject(hit.getSourceAsString());
+            //再由json转为实体类
+            System.out.println(json.toJSONString());
+            list.add ((UserDo)JSONObject.toJavaObject(json,UserDo.class));
+        }
+
+        return list;
+    }
+
+//    @Override
+//    public String deleteAllMemberToES() throws IOException {
+//        DeleteRequest deleteRequest = new DeleteRequest("billionbyte", "member", );
+//
+//          DeleteResponse response=  highLevelClient.delete(deleteRequest);
+//
+//        return response.toString() ;
+//
+//    }
 
     /**
      * 使用递归+反射 遍历所有指标聚合和桶聚合，
@@ -488,5 +540,19 @@ public class MemberServiceImpl implements MemberService {
         }
 
         return map ;
+    }
+    /**
+     * UserDo转为Map，
+     **/
+    public Map<String,Object> toMap(UserDo userDo){
+
+        Map<String, Object> source = new HashMap<String, Object>();
+        source.put("userId",userDo.getUserId());
+        source.put("userName",userDo.getUserName());
+        source.put("email",userDo.getEmail());
+        source.put("mobile",userDo.getMobile());
+        source.put("password",userDo.getPassword());
+        source.put("sex",String.valueOf(userDo.getSex()));
+        return source;
     }
 }

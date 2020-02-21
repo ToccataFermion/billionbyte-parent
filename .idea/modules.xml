@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/billionbyte-common/billionbyte-common.iml" filepath="$PROJECT_DIR$/billionbyte-common/billionbyte-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/billionbyte-parent.iml" filepath="$PROJECT_DIR$/.idea/billionbyte-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/billionbyte-service-api/billionbyte-service-api.iml" filepath="$PROJECT_DIR$/billionbyte-service-api/billionbyte-service-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/billionbyte-service-api/billionbyte-service-api-member/billionbyte-service-api-member.iml" filepath="$PROJECT_DIR$/billionbyte-service-api/billionbyte-service-api-member/billionbyte-service-api-member.iml" />
+      <module fileurl="file://$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-impl.iml" filepath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/billionbyte-service-member.iml" filepath="$PROJECT_DIR$/billionbyte-service-impl/billionbyte-service-member/billionbyte-service-member.iml" />
+    </modules>
+  </component>
+</project>

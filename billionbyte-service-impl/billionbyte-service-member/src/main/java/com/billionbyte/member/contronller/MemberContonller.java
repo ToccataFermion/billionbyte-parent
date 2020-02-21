@@ -145,7 +145,7 @@ public class MemberContonller extends BaseApiService {
             UserDolist = memberService.searchByNameMember(userName);
         } catch (IOException e){
             e.printStackTrace();
-
+            return setResultError(Constants.HTTP_RES_CODE_500,"内部错误");
         }
         JSONObject data=new JSONObject();
         data.put("data",UserDolist);
@@ -163,7 +163,7 @@ public class MemberContonller extends BaseApiService {
             result = memberService.countGroupByuserIdandSex();
         } catch (IOException e){
             e.printStackTrace();
-
+            return setResultError(Constants.HTTP_RES_CODE_500,"内部错误");
         }
         JSONObject data=new JSONObject();
         Map mapType = JSON.parseObject(result,Map.class);
@@ -173,6 +173,7 @@ public class MemberContonller extends BaseApiService {
     @ApiOperation("桶聚合嵌套指标聚合查询：按sex分组统计每个sex组的avg_userId")
     @ApiResponses({
             @ApiResponse(code=400,message="参数错误"),
+            @ApiResponse(code=500,message="内部错误"),
     })
     @GetMapping("/member/avgUserIdGroupBySex")
     public  BaseResponse<JSONObject> avgUserIdGroupBySex(){
@@ -182,7 +183,7 @@ public class MemberContonller extends BaseApiService {
             result = memberService.avgUserIdGroupBySex();
         } catch (IOException e){
             e.printStackTrace();
-
+            return setResultError(Constants.HTTP_RES_CODE_500,"内部错误");
         }
         JSONObject data=new JSONObject();
         Map map=JSON.parseObject(result,Map.class);
@@ -193,16 +194,16 @@ public class MemberContonller extends BaseApiService {
 
     @ApiOperation(value="插入新用户数据到ES",notes = "输入UserDo插入用户数据,")
     @ApiImplicitParams({
-            @ApiImplicitParam(paramType="query",name="userId",dataType="Integer",required=false,value="用户id",defaultValue="0"),
-            @ApiImplicitParam(paramType="query",name="userName",dataType="String",required=false,value="用户名",defaultValue="无名"),
-            @ApiImplicitParam(paramType="query",name="password",dataType="String",required=false,value="用户的密码",defaultValue="321"),
-            @ApiImplicitParam(paramType="query",name="email",dataType="String",required=false,value="用户的邮箱",defaultValue="321@qq.com"),
-            @ApiImplicitParam(paramType="query",name="sex",dataType="String",required=false,value="用户的性别(男为1，女为0)",defaultValue="1"),
-            @ApiImplicitParam(paramType="query",name="mobile",dataType="String",required=false,value="用户的电话",defaultValue="124556")
+            @ApiImplicitParam(paramType="query" ,name="userId",dataType="int",required=true,value="用户id",defaultValue="1"),
+            @ApiImplicitParam(paramType="query",name="userName",dataType="String",required=true,value="用户名",defaultValue="name1"),
+            @ApiImplicitParam(paramType="query",name="password",dataType="String",required=true,value="用户的密码",defaultValue="password1"),
+            @ApiImplicitParam(paramType="query",name="email",dataType="String",required=true,value="用户的邮箱",defaultValue="1@qq.com"),
+            @ApiImplicitParam(paramType="query",name="sex",dataType="String",required=true,value="用户的性别(男为1，女为0)",defaultValue="1"),
+            @ApiImplicitParam(paramType="query",name="mobile",dataType="String",required=true,value="用户的电话",defaultValue="1")
     })
     @ApiResponses({
-            @ApiResponse(code=203,message="用户信息不存在"),
             @ApiResponse(code=400,message="参数错误"),
+            @ApiResponse(code=500,message="内部错误"),
     })
     @PostMapping("/member/insertMemeberToES")
     public BaseResponse<JSONObject> insertMemeberToES(UserDo userDo) {
@@ -210,13 +211,69 @@ public class MemberContonller extends BaseApiService {
         JSONObject data=new JSONObject();
         try {
 
-        String userName=memberService.insertMemeberToES(userDo);
-            data.put("data",userName);
+            String response=memberService.insertMemeberToES(userDo);
+            data.put("data",response);
         }catch (Exception e){
             e.printStackTrace();
             return setResultError(Constants.HTTP_RES_CODE_500,"内部错误");
         }
 
         return  setResultSuccess(data);
+    }
+    @ApiOperation(value="更新新用户数据到ES",notes = "输入UserDo更新用户数据,")
+    @ApiImplicitParams({
+            @ApiImplicitParam(paramType="query",name="userId",dataType="int",required=true,value="用户id",defaultValue="1"),
+            @ApiImplicitParam(paramType="query",name="userName",dataType="String",required=true,value="用户名",defaultValue="name1"),
+            @ApiImplicitParam(paramType="query",name="password",dataType="String",required=true,value="用户的密码",defaultValue="password1"),
+            @ApiImplicitParam(paramType="query",name="email",dataType="String",required=true,value="用户的邮箱",defaultValue="111@qq.com"),
+            @ApiImplicitParam(paramType="query",name="sex",dataType="String",required=true,value="用户的性别(男为1，女为0)",defaultValue="1"),
+            @ApiImplicitParam(paramType="query",name="mobile",dataType="String",required=true,value="用户的电话",defaultValue="1")
+    })
+    @ApiResponses({
+            @ApiResponse(code=400,message="参数错误"),
+            @ApiResponse(code=500,message="内部错误"),
+    })
+    @PostMapping("/member/updateMemeberToES")
+    public BaseResponse<JSONObject> updateMemeberToES(UserDo userDo) {
+        //1验证各种参数等
+        JSONObject data=new JSONObject();
+        try {
+
+            String response=memberService.updateMemberToES(userDo);
+            data.put("data",response);
+        }catch (Exception e){
+            e.printStackTrace();
+            return setResultError(Constants.HTTP_RES_CODE_500,"内部错误");
+        }
+
+        return  setResultSuccess(data);
+    }
+    @ApiOperation(value="任意字段从ES查询用户数据",notes = "输入UserDo查询用户数据,")
+    @ApiImplicitParams({
+            @ApiImplicitParam(paramType="query",name="userId",dataType="long",required=false,value="用户id",defaultValue="1"),
+            @ApiImplicitParam(paramType="query",name="userName",dataType="String",required=false,value="用户名",defaultValue="name1"),
+            @ApiImplicitParam(paramType="query",name="password",dataType="String",required=false,value="用户的密码",defaultValue="password1"),
+            @ApiImplicitParam(paramType="query",name="email",dataType="String",required=false,value="用户的邮箱",defaultValue="111@qq.com"),
+            @ApiImplicitParam(paramType="query",name="sex",dataType="String",required=false,value="用户的性别(男为1，女为0)",defaultValue="1"),
+            @ApiImplicitParam(paramType="query",name="mobile",dataType="String",required=false,value="用户的电话",defaultValue="1")
+    })
+    @ApiResponses({
+            @ApiResponse(code=400,message="参数错误"),
+            @ApiResponse(code=500,message="内部错误"),
+    })
+    @PostMapping("/member/boolSearchByAnyField")
+    public BaseResponse<List<UserDo>> boolSearchByAnyField(UserDo userDo) {
+        //1验证各种参数等
+        JSONObject data=new JSONObject();
+        try {
+
+            List<UserDo> response;   response=memberService.boolSearchByAnyField(userDo);
+            data.put("data",response);
+        }catch (Exception e){
+            e.printStackTrace();
+            return setResultError(Constants.HTTP_RES_CODE_500,"内部错误");
+        }
+
+        return setResultSuccess(data);
     }
 }

@@ -425,12 +425,17 @@ public class MemberServiceImpl implements MemberService {
         BoolQueryBuilder boolQuery = QueryBuilders.boolQuery();
         Map<String,Object> map=toMap(userDo);
         for(Map.Entry<String,Object> entry : map.entrySet()){
-            if(entry.getValue()!=null && !entry.getValue().equals("") && !entry.getValue().equals("\u0000") ){
-                boolQuery.must(QueryBuilders.matchQuery(entry.getKey(),entry.getValue()));
+
+            if(entry.getValue()!=null && !entry.getValue().toString().isEmpty() ){
+                MatchQueryBuilder query= QueryBuilders.matchQuery(entry.getKey(),entry.getValue());
+                if(entry.getValue().getClass()==String.class){
+                    query.fuzziness(Fuzziness.AUTO);
+                }
+                boolQuery.must(query);
             }
         }
         SearchSourceBuilder sourceBuilder=new SearchSourceBuilder();
-        sourceBuilder.query(boolQuery).size(99);
+        sourceBuilder.query(boolQuery).size(99).timeout(new TimeValue(60, TimeUnit.SECONDS));
         request.source(sourceBuilder);
         SearchResponse response=highLevelClient.search(request);
         //处理结果返回为list<user>
@@ -550,7 +555,7 @@ public class MemberServiceImpl implements MemberService {
         source.put("email",userDo.getEmail());
         source.put("mobile",userDo.getMobile());
         source.put("password",userDo.getPassword());
-        source.put("sex",String.valueOf(userDo.getSex()));
+        source.put("sex",userDo.getSex());
         return source;
     }
 }
